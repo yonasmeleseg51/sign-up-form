@@ -1,0 +1,105 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row; 
+}
+.img{
+    display: flex;
+    margin: 1% 1% 1% 0%;
+    width: 50%;
+    height: 100%;
+    background: url(./images/umberto-FewHpO4VC9Y-unsplash\ \(1\).jpg) no-repeat center;
+    background-size: cover;
+    justify-content: center;
+    border: 1px solid white;
+
+
+
+}
+.img-description{
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: aliceblue;
+}
+.logo{
+    margin-top: 20%;
+    display: flex;
+    width: 40%;
+    height: 40%; 
+    justify-content: center; 
+}
+form{
+    padding-top: 3%;
+    width: 80%;
+    margin-left: 0%;
+
+}
+.inputs{
+    font-weight: 900;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+    padding-right: 10px;
+    width: 90%;
+}
+.form-input :focus{
+transition: 0.2s;
+outline: none;
+border: 2px solid black;
+}
+.inputs :last-child{
+    padding-left: 10px;
+
+}
+.account{
+    margin-top: 40px;
+    border-top: 3px;
+    border-top-style: groove;
+    border-radius: 20px;
+}
+.create{
+    margin-top: 20px;
+    margin-left: 30px;
+   height: 50px;
+   width: 200px;
+   border-radius: 30px;
+   font-size: larger;
+   background-color: darkgreen;
+}
+a{
+    text-decoration: none;
+}
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+}
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+}

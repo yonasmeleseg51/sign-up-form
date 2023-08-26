@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up-form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="img">
+        <div class="logo">
+            <img src="images/logo-no-background.png" alt="">
+        </div>
+        <div class="img-description">
+            <p class="img-info">Photo by Yonas</p>
+        </div>
+    </div>
+    <div class="form">
+        <div class="form-info">
+            <p style="font-weight: 1000;"> This is not a real online service! Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Necessitatibus, commodi! Sign up now to get started
+                <span><br></span><span><br></span>
+                <span style="font-style: italic;">Youknow you want to.</span>
+</p>
+               
+        
+        </div>
+        <form action="">
+            <h1>Let's do this!</h1>
+            <div class="inputs">
+                <div class="first-name">
+                    <label for="first-name">First Name</label><br>
+                    <input type="text" class="form-input" id="first-name" placeholder="First Name">
+                </div>
+                <div class="last-name">
+                    <label for="last-name">Last Name</label><br>
+                    <input type="text" class="form-input" id="last-name" placeholder="last-name Name">
+                </div>
+                <div class="emmail">
+                    <label for="email">Email</label><br>
+                    <input type="email" class="form-input" id="email" placeholder="@jonah123.com">
+                </div>
+                <div class="phone">
+                    <label for="phone">phone</label><br>
+                    <input type="text" class="form-input" id="phone" >
+                </div>
+                <div class="password">
+                    <label for="password">Password</label><br>
+                    <input type="password" class="form-input" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
+                    <input type="checkbox" onclick="myFunction()"><span style="font-weight: 300; font-style: italic;">Show Password</span>
+                </div>
+                <div class="confirm-password">
+                    <label for="confirm-password">Confirm Password</label><br>
+                    <input type="password" class="form-input" id="confirm-password" >
+                </div>
+               
+            </div>
+            <div class="account">
+                <input type="submit" value="Create Account" class="create"><br><br>
+                <p>Already have an account? <a href="#">Login</a>
+        
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
